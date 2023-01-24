@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* CSS GENERAL PARA HEADER Y FOOTER*/
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4 1fr);
+}
+.logo {
+  width: 75%;
+}
+header {
+  background-color: rgba(255, 228, 196, 0.848);
+  padding: 15px;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.navegation-item {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.navegation-item:hover {
+  transition: 1.05s;
+  color: rgba(124, 42, 201, 0.679);
+}
+.text {
+  font-size: 20px;
+}
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  padding: 25px 0px;
+  text-align: center;
+}
+.footer-sm-icons {
+  background-color: rgba(128, 128, 128, 0.581);
+  padding: 15px;
+}
+.footer-sm-icons a {
+  color: white;
+  padding: 15px;
+  font-size: 25px;
+}
+.sm-text {
+  padding: 15px;
+}
+.footer-copyright {
+  margin-top: 5%;
+}
+/* MOBILE 768px */
+@media (min-width: 768px) {
+  /* HEADER */
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  .text {
+    font-size: 25px;
+  }
+  /* FOOTER */
+  .footer-sm-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+/* MOBILE 1023PX */
+@media (min-width: 1023px) {
+  /* GENERAL */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navegation-item {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .text {
+    font-size: 30px;
+  }
+  /* FOOTER */
+  .footer-copyright {
+    margin-top: 3%;
+  }
+  .footer-sm-icons {
+    display: flex;
+  }
+}
+/* INICIO */
+.section {
+  padding: 15px;
+  text-align: center;
+}
+.torta {
+  padding: 15px;
+  width: 90%;
+}
+.torta--grid {
+  padding: 15px;
+  width: 90%;
+}
+.productos {
+  padding: 15px;
+}
+.productos-title {
+  padding: 10px;
+}
+.sobre-mi {
+  padding: 15px;
+}
+/* MOBILE 768PX */
+@media (min-width: 768px) {
+  .section {
+    padding: 25px;
+  }
+}
+/* MOBILE 1023PX */
+@media (min-width: 1023px) {
+  /* HEADER */
+  header {
+    background-color: bisque;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+  }
+}
