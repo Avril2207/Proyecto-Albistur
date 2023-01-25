@@ -150,18 +150,33 @@ footer {
     grid-template-columns: auto auto;
     grid-template-rows: 50% auto;
     grid-template-areas:
-      "inicio foto"
+      "inicio inicio"
       "productos productos";
   }
   .intro-section {
     grid-area: inicio;
-    display: flex;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 65% 65%;
+    grid-template-rows: auto 90%;
+    grid-template-areas:
+      "title foto"
+      "text foto";
+  }
+  .sobre-mi {
+    grid-area: title;
+    text-align: start;
   }
   .torta--grid {
     grid-area: foto;
+    width: 60%;
+    height: 70%;
+  }
+  .text {
+    grid-area: text;
+    text-align: start;
   }
   .productos {
-    grid-area: productos;
     display: flex;
   }
 }
