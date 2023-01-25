@@ -4,6 +4,7 @@
 }
 /* CSS GENERAL PARA HEADER Y FOOTER*/
 .container {
+  background-color: rgba(220, 220, 220, 0.17);
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(4 1fr);
@@ -137,5 +138,30 @@ footer {
     position: sticky;
     top: 0px;
     z-index: 2;
+  }
+  .torta {
+    max-width: 50%;
+  }
+  .torta--grid {
+    max-width: 50%;
+  }
+  .section {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50% auto;
+    grid-template-areas:
+      "inicio foto"
+      "productos productos";
+  }
+  .intro-section {
+    grid-area: inicio;
+    display: flex;
+  }
+  .torta--grid {
+    grid-area: foto;
+  }
+  .productos {
+    grid-area: productos;
+    display: flex;
   }
 }
